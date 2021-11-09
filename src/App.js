@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Gauges } from './components/GuageComponent/Guage';
 import './App.css';
 // const guageStyle = {
 //   color: 'blue',
@@ -26,15 +27,7 @@ class App extends React.Component {
           pattern='[0-9]*'
           onChange={(e) => this.handleChange(e)}
         />
-        <div
-          className={'guage'}
-          style={{
-            color: '#0B6E4F',
-            background: `conic-gradient(#0B6E4F 0% ${this.state.guageValue}%, #303238 ${this.state.guageValue}% 100%)`,
-          }}
-        >
-          <div className={'guage-inner'}>{this.state.guageValue}</div>
-        </div>
+        <Gauges guageValue={this.state.guageValue} />
       </div>
     );
   }
