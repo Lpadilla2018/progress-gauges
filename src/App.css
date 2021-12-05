@@ -37,34 +37,10 @@
   }
 } */
 
-
-.guage {
-  display: grid;
-  place-items: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  cursor: default;
-}
-
-.guage.blue {
-  color:blue;
-  background: conic-gradient(blue 0% 20%, #303238 20% 100%);
-}
-
 /* 
 color: '#FA9F42'
 color: '#0B6E4F',
 */
-
-.guage-inner {
-  display: grid;
-  place-items: center;
-  width: 85px;
-  height: 85px;
-  border-radius: 50%;
-  background: #1d1e22;
-}
 
 .main {
   height: 100vmin;
